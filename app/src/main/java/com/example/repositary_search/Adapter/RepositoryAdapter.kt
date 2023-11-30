@@ -17,9 +17,6 @@ class RepositoryAdapter: RecyclerView.Adapter<RepositoryAdapter.RepositoryViewHo
 
     class RepositoryViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
        val Title: TextView = itemView.findViewById(R.id.tv_title)
-       val Brand: TextView = itemView.findViewById(R.id.brand)
-       val Price: TextView = itemView.findViewById(R.id.price)
-       val Rating: RatingBar = itemView.findViewById(R.id.rating_star)
        val thumbnail: ImageView = itemView.findViewById(R.id.image_logo)
        val cardView: ConstraintLayout = itemView.findViewById(R.id.cardView)
    }
@@ -37,7 +34,7 @@ class RepositoryAdapter: RecyclerView.Adapter<RepositoryAdapter.RepositoryViewHo
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RepositoryViewHolder {
         return RepositoryViewHolder(
-            LayoutInflater.from(parent.context).inflate(R.layout.product_card, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.repository_card, parent, false)
         )
     }
 

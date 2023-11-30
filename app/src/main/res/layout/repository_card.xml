@@ -27,44 +27,22 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:maxLines="2"
-        android:text="NIGHT SUIT"
+        android:text="Name Repository"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/image_logo"
         app:layout_constraintTop_toTopOf="@+id/image_logo" />
 
     <TextView
-        android:id="@+id/brand"
+        android:id="@+id/description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:maxLines="2"
-        android:text="RED MICKY MOUSE.."
+        android:text="Repository Description"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/tv_title"
         app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
-    <TextView
-        android:id="@+id/price"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginBottom="5dp"
-        android:text="$600"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/image_logo"
-        app:layout_constraintStart_toEndOf="@+id/image_logo" />
 
-    <RatingBar
-        android:id="@+id/rating_star"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:isIndicator="true"
-        android:numStars="5"
-        android:rating="4"
-        android:scaleX="0.5"
-        android:scaleY="0.5"
-        app:layout_constraintBottom_toTopOf="@+id/price"
-        app:layout_constraintStart_toEndOf="@+id/image_logo"
-        app:layout_constraintTop_toBottomOf="@+id/brand" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
